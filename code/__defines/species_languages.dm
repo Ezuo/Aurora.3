@@ -7,6 +7,7 @@
 #define NO_POISON         0x20   // Cannot not suffer toxloss.
 #define IS_PLANT          0x40   // Is a treeperson.
 #define NO_MINOR_CUT      0x80   // Can step on broken glass with no ill-effects. Either thick skin (diona/vox), cut resistant (slimes) or incorporeal (shadows)
+#define VOID_BREATHE      0x160  // Can breathe in 0kpa
 // unused: 0x8000 - higher than this will overflow
 
 // Species spawn flags
@@ -41,6 +42,7 @@
 #define LANGUAGE_VAURCA "Hivenet"
 #define LANGUAGE_AZAZIBA "Sinta'azaziba"
 #define LANGUAGE_SIGN "Sign Language"
+#define LANGUAGE_FORZUN "Mind Link"
 
 // Antag Languages
 #define LANGUAGE_XENOMORPH "Xenomorph"

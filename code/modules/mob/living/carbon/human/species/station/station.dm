@@ -695,3 +695,152 @@ datum/species/machine/handle_post_spawn(var/mob/living/carbon/human/H)
 /datum/species/bug/handle_post_spawn(var/mob/living/carbon/human/H)
 	H.gender = NEUTER
 	return ..()
+
+/datum/species/fish
+
+	name = "Forzun"
+	name_plural                                      // Pluralized name (since "[name]s" is not always valid)
+	hide_name = FALSE                                // If TRUE, the species' name won't be visible on examine.
+	short_name = "fzn"                             // Shortened form of the name, for code use. Must be exactly 3 letter long, and all lowercase
+	blurb = "Placeholder Forzun description"      // A brief lore summary for use in the chargen screen.
+	bodytype = "Human"
+	age_min = 5
+	age_max = 50
+
+	// Icon/appearance vars.
+	icobase = 'icons/mob/human_races/r_human.dmi'    // Normal icon set.
+	deform = 'icons/mob/human_races/r_def_human.dmi' // Mutated icon set.
+
+	// Damage overlay and masks.
+	damage_overlays = 'icons/mob/human_races/masks/dam_human.dmi'
+	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
+	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
+
+
+	eyes = "eyes_s"                                  // Icon for eyes.                        
+	blood_color = "#C70AF5"                          // Purple
+	flesh_color = "#FFC896"                          // Pink.
+	base_color                                       // Used by changelings. Should also be used for icon previes..
+	icon/icon_template                               // Used for mob icon generation for non-32x32 species.
+	bald = 1
+
+	// Language/culture vars.
+	default_language = LANGUAGE_FORZUN 	 // Default language is used when 'say' is used without modifiers.
+	language = LANGUAGE_FORZUN      		 // Default racial language, if any.
+	name_language = LANGUAGE_FORZUN
+
+	// Combat vars.
+	total_health = 80                   // Point at which the mob will enter crit.
+	list/unarmed_types = list(           // Possible unarmed attacks that the mob will use in combat,
+		/datum/unarmed_attack,
+		/datum/unarmed_attack/bite
+		)
+	list/unarmed_attacks = null          // For empty hand harm-intent attack
+	brute_mod =     1.5                    // Physical damage multiplier.
+	burn_mod =      0.8                    // Burn damage multiplier.
+	oxy_mod = 1
+	toxins_mod =    1.5                    // Toxloss modifier
+	radiation_mod = 0                    // Radiation modifier
+	flash_mod =     1                    // Stun from blindness modifier.
+	fall_mod =      0                    // Fall damage modifier, further modified by brute damage modifier
+
+	// Death vars.
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat/human
+	gibber_type = /obj/effect/gibspawner/human
+	single_gib_type = /obj/effect/decal/cleanable/blood/gibs
+	remains_type = /obj/effect/decal/remains/xeno
+	gibbed_anim = "gibbed-h"
+	dusted_anim = "dust-h"
+	death_sound
+	death_message = "seizes up and falls limp, their eyes dead and lifeless..."
+	knockout_message = "has been knocked unconscious!"
+	halloss_message = "slumps to the ground, too weak to continue fighting."
+	halloss_message_self = "You're in too much pain to keep going..."
+
+	// Environment tolerance/life processes vars.
+	reagent_tag                                   //Used for metabolizing reagents.
+	breath_pressure = -1                          // Minimum partial pressure safe for breathing, kPa
+	breath_type = null
+	poison_type = "nitrogen"                       // Poisonous air.
+	exhale_type = null
+	cold_level_1 = -1                            // Cold damage level 1 below this point.
+	cold_level_2 = -1                            // Cold damage level 2 below this point.
+	cold_level_3 = -1                            // Cold damage level 3 below this point.
+	heat_level_1 = 300                            // Heat damage level 1 above this point.
+	heat_level_2 = 400                            // Heat damage level 2 above this point.
+	heat_level_3 = 600                           // Heat damage level 3 above this point.
+	passive_temp_gain = 0		                  // Species will gain this much temperature every second
+	hazard_high_pressure = 30   // Dangerously high pressure.
+	warning_high_pressure = 15 // High pressure warning.
+	warning_low_pressure = -1   // Low pressure warning.
+	hazard_low_pressure = -1     // Dangerously low pressure.
+	body_temperature = 100	                  // Non-IS_SYNTHETIC species will try to stabilize at this temperature.
+	                                                  // (also affects temperature processing)
+
+	heat_discomfort_level = 200                   // Aesthetic messages about feeling warm.
+	cold_discomfort_level = -1                   // Aesthetic messages about feeling chilly.
+	list/heat_discomfort_strings = list(
+		"You feel sweat drip down your neck.",
+		"You feel uncomfortably warm.",
+		"Your skin prickles in the heat."
+		)
+	list/cold_discomfort_strings = list(
+		"You feel chilly.",
+		"You shiver suddenly.",
+		"Your chilly flesh stands out in goosebumps."
+		)
+
+	// HUD data vars.
+	datum/hud_data/hud
+	hud_type
+
+	// Body/form vars.
+	list/inherent_verbs 	  // Species-specific verbs.
+	has_fine_manipulation = 1 // Can use small items.
+	siemens_coefficient = 1   // The lower, the thicker the skin and better the insulation.
+	darksight = 2             // Native darksight distance.
+	flags = VOID_BREATHE //Snowflake flag that circumvents processing a needed gas (e.g. oxy for humans)
+	appearance_flags = 0      // Appearance/display related features.
+	spawn_flags = CAN_JOIN | IS_WHITELISTED           // Flags that specify who can spawn as this species
+	slowdown = 0              // Passive movement speed malus (or boost, if negative)
+	holder_type
+	rarity_value = 4          // Relative rarity/collector value for this species.
+	ethanol_resistance = 0.2	  // How well the mob resists alcohol, lower values get drunk faster, higher values need to drink more
+	taste_sensitivity = TASTE_SENSITIVE // How sensitive the species is to minute tastes. Higher values means less sensitive. Lower values means more sensitive.
+
+	stamina	=	100			  	// The maximum stamina this species has. Determines how long it can sprint
+	stamina_recovery = 3	  	// Flat amount of stamina species recovers per proc
+	sprint_speed_factor = 0.7	// The percentage of bonus speed you get when sprinting. 0.4 = 40%
+	sprint_cost_factor = 0.9  	// Multiplier on stamina cost for sprinting
+	exhaust_threshold = 50	  	// When stamina runs out, the mob takes oxyloss up til this value. Then collapses and drops to walk
+
+	gluttonous                // Can eat some mobs. Boolean.
+	mouth_size                // How big the mob's mouth is. Limits how large a mob this species can swallow. Only relevant if gluttonous is TRUE.
+	max_nutrition_factor = 1	//Multiplier on maximum nutrition
+	nutrition_loss_factor = 1	//Multiplier on passive nutrition losses
+
+	                              // Determines the organs that the species spawns with and
+	list/has_organ = list(    // which required-organ checks are conducted.
+		"heart" =    /obj/item/organ/heart,
+		"lungs" =    /obj/item/organ/lungs,
+		"liver" =    /obj/item/organ/liver,
+		"kidneys" =  /obj/item/organ/kidneys,
+		"brain" =    /obj/item/organ/brain,
+		"appendix" = /obj/item/organ/appendix,
+		"eyes" =     /obj/item/organ/eyes
+		)
+	vision_organ              // If set, this organ is required for vision. Defaults to "eyes" if the species has them.
+
+	list/has_limbs = list(
+		"chest" =  list("path" = /obj/item/organ/external/chest),
+		"groin" =  list("path" = /obj/item/organ/external/groin),
+		"head" =   list("path" = /obj/item/organ/external/head),
+		"l_arm" =  list("path" = /obj/item/organ/external/arm),
+		"r_arm" =  list("path" = /obj/item/organ/external/arm/right),
+		"l_leg" =  list("path" = /obj/item/organ/external/leg),
+		"r_leg" =  list("path" = /obj/item/organ/external/leg/right),
+		"l_hand" = list("path" = /obj/item/organ/external/hand),
+		"r_hand" = list("path" = /obj/item/organ/external/hand/right),
+		"l_foot" = list("path" = /obj/item/organ/external/foot),
+		"r_foot" = list("path" = /obj/item/organ/external/foot/right)
+		)

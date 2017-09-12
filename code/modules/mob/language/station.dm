@@ -243,6 +243,16 @@
 	flags = WHITELISTED | NONVERBAL
 	syllables = list("azs","zis","zau","azua","skiu","zuakz","izo","aei","ki","kut","zo")
 
+/datum/language/fish
+	name = LANGUAGE_FORZUN
+	desc = "Placeholder forzun desc"
+	speech_verb = "broadcasts"
+	colour = "forzun"
+	key = "z"
+	native = 1
+	flags = WHITELISTED | HIVEMIND | NO_STUTTER
+	syllables = list("foo", "bar")
+
 //Syllable Lists
 /*
 	This list really long, mainly because I can't make up my mind about which mandarin syllables should be removed,

@@ -644,6 +644,8 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 		dat += "</br><b>Has excellent traction.</b>"
 	if(current_species.flags & NO_POISON)
 		dat += "</br><b>Immune to most poisons.</b>"
+	if(current_species.flags & VOID_BREATHE)
+		dat += "</br><b>Can only breathe in a vaccum.</b>"
 	if(current_species.appearance_flags & HAS_SKIN_TONE)
 		dat += "</br><b>Has a variety of skin tones.</b>"
 	if(current_species.appearance_flags & HAS_SKIN_COLOR)
