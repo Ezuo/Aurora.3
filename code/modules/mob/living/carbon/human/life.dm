@@ -383,7 +383,7 @@
 	return breath
 
 /mob/living/carbon/human/handle_breath(datum/gas_mixture/breath)
-	var/breathe_check = FALSE 
+	var/breathe_check = null 
 	if(species && (species.flags & VOID_BREATHE))
 		breathe_check = TRUE
 
@@ -396,7 +396,7 @@
 			rupture_lung()
 
 	//check if we actually need to process breath
-	if((!breath || breath.total_moles == 0) && breathe_check == FALSE)
+	if((!breath || breath.total_moles == 0) && breathe_check)
 		failed_last_breath = 1
 		if(health > config.health_threshold_crit)
 			adjustOxyLoss(HUMAN_MAX_OXYLOSS)
@@ -469,7 +469,7 @@
 	var/exhaled_pp = (exhaling/breath.total_moles)*breath_pressure
 
 	// Not enough to breathe
-	if((inhale_pp < safe_pressure_min) && breathe_check == FALSE)
+	if((inhale_pp < safe_pressure_min) && breathe_check)
 		if(prob(20))
 			spawn(0) emote("gasp")
 
@@ -487,7 +487,7 @@
 
 	breath.adjust_gas(breath_type, -inhaled_gas_used, update = 0) //update afterwards
 
-	if(exhale_type && breathe_check == FALSE)
+	if(exhale_type && breathe_check)
 		breath.adjust_gas_temp(exhale_type, inhaled_gas_used, bodytemperature, update = 0) //update afterwards
 
 		// Too much exhaled gas in the air

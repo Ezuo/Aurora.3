@@ -699,8 +699,7 @@ datum/species/machine/handle_post_spawn(var/mob/living/carbon/human/H)
 /datum/species/fish
 
 	name = "Forzun"
-	name_plural                                      // Pluralized name (since "[name]s" is not always valid)
-	hide_name = FALSE                                // If TRUE, the species' name won't be visible on examine.
+	name_plural = "Forzun"
 	short_name = "fzn"                             // Shortened form of the name, for code use. Must be exactly 3 letter long, and all lowercase
 	blurb = "Placeholder Forzun description"      // A brief lore summary for use in the chargen screen.
 	bodytype = "Human"

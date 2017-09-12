@@ -58,9 +58,6 @@
 		if (translate_hivenet)
 			var/datum/language/bug = all_languages[LANGUAGE_VAURCA]
 			bug.broadcast(M, message)
-		if (translate_basic)
-			var/datum/language/common = all_languages[LANGUAGE_TCB]
-			common.broadcast(M, message)
 		return null
 
 	return ..()
@@ -240,7 +237,9 @@
 /obj/item/device/radio/headset/translator
 	name = "translator headset"
 	desc = "A modified radio headset for Forzun employees, allowing them to hear and understand Basic."
+	icon_state = "translator"
 	translate_basic = 1
+	canremove = 0
 	ks1type = /obj/item/device/encryptionkey/translator
 
 /obj/item/device/radio/headset/attackby(obj/item/weapon/W as obj, mob/user as mob)
