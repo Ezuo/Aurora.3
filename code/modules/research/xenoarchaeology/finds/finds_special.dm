@@ -5,8 +5,8 @@
 /obj/item/weapon/reagent_containers/glass/replenishing
 	var/spawning_id
 
-/obj/item/weapon/reagent_containers/glass/replenishing/Initialize()
-	. = ..()
+/obj/item/weapon/reagent_containers/glass/replenishing/New()
+	..()
 	START_PROCESSING(SSprocessing, src)
 	spawning_id = pick("blood","holywater","lube","stoxin","ethanol","ice","glycerol","fuel","cleaner")
 
@@ -66,11 +66,11 @@
 
 /obj/item/weapon/vampiric/New()
 	..()
-	START_PROCESSING(SSprocessing, src)
+	processing_objects.Add(src)
 	listening_objects += src
 
 /obj/item/weapon/vampiric/Destroy()
-	STOP_PROCESSING(SSprocessing, src)
+	processing_objects.Remove(src)
 	listening_objects -= src
 	return ..()
 
@@ -159,11 +159,11 @@
 
 /obj/effect/decal/cleanable/blood/splatter/animated/New()
 	..()
-	START_PROCESSING(SSprocessing, src)
+	processing_objects.Add(src)
 	loc_last_process = src.loc
 
 /obj/effect/decal/cleanable/blood/splatter/animated/Destroy()
-	STOP_PROCESSING(SSprocessing, src)
+	processing_objects.Remove(src)
 	return ..()
 
 /obj/effect/decal/cleanable/blood/splatter/animated/process()
@@ -193,10 +193,10 @@
 	density = 1
 
 /obj/effect/shadow_wight/New()
-	START_PROCESSING(SSprocessing, src)
+	processing_objects.Add(src)
 
 /obj/effect/shadow_wight/Destroy()
-	STOP_PROCESSING(SSprocessing, src)
+	processing_objects.Remove(src)
 	return ..()
 
 /obj/effect/shadow_wight/process()
@@ -221,7 +221,7 @@
 			M.sleeping = max(M.sleeping,rand(5,10))
 			src.loc = null
 	else
-		STOP_PROCESSING(SSprocessing, src)
+		processing_objects.Remove(src)
 
 /obj/effect/shadow_wight/Bump(var/atom/obstacle)
 	obstacle << "<span class='warning'>You feel a chill run down your spine!</span>"

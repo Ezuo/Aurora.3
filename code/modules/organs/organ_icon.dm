@@ -39,7 +39,12 @@
 
 /obj/item/organ/external/head/sync_colour_to_human(var/mob/living/carbon/human/human)
 	..()
-	var/obj/item/organ/eyes/eyes = owner.get_eyes()
+	var/obj/item/organ/eyes/eyes
+	if (species.vision_organ)
+		eyes = owner.internal_organs_by_name[species.vision_organ]
+	else
+		eyes = owner.internal_organs_by_name["eyes"]
+
 	if(eyes)
 		eyes.update_colour()
 
@@ -52,8 +57,8 @@
 	cut_overlays()
 	if(!owner || !owner.species)
 		return
-	if(owner.species.has_organ[owner.species.vision_organ])
-		var/obj/item/organ/eyes/eyes = owner.get_eyes()
+	if(owner.species.has_organ["eyes"] || (owner.species.vision_organ && owner.species.has_organ[species.vision_organ]))
+		var/obj/item/organ/eyes/eyes = owner.internal_organs_by_name["eyes"] || owner.internal_organs_by_name[species.vision_organ]
 		if(eyes && species.eyes)
 			var/eyecolor
 			if (eyes.eye_colour)

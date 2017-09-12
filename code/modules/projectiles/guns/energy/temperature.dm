@@ -16,11 +16,11 @@
 /*
 /obj/item/weapon/gun/energy/temperature/New()
 	..()
-	START_PROCESSING(SSprocessing, src)
+	processing_objects.Add(src)
 
 
 /obj/item/weapon/gun/energy/temperature/Destroy()
-	STOP_PROCESSING(SSprocessing, src)
+	processing_objects.Remove(src)
 	..()
 
 

@@ -253,11 +253,11 @@
 	charge_use = 50
 
 	for(var/obj/item/weapon/stock_parts/P in component_parts)
-		if(ismicrolaser(P))
+		if(istype(P, /obj/item/weapon/stock_parts/micro_laser))
 			harvest_speed = P.rating
-		else if(ismatterbin(P))
+		if(istype(P, /obj/item/weapon/stock_parts/matter_bin))
 			capacity = 200 * P.rating
-		else if(iscapacitor(P))
+		if(istype(P, /obj/item/weapon/stock_parts/capacitor))
 			charge_use -= 10 * P.rating
 	cell = locate(/obj/item/weapon/cell) in component_parts
 

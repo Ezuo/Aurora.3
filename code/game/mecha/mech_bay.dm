@@ -32,14 +32,13 @@
 	..()
 	charge = 0
 	repair = -5
-
 	for(var/obj/item/weapon/stock_parts/P in component_parts)
-		if(iscapacitor(P))
+		if(istype(P, /obj/item/weapon/stock_parts/capacitor))
 			charge += P.rating * 20
-		else if(isscanner(P))
+		if(istype(P, /obj/item/weapon/stock_parts/scanning_module))
 			charge += P.rating * 5
 			repair += P.rating
-		else if(ismanipulator(P))
+		if(istype(P, /obj/item/weapon/stock_parts/manipulator))
 			repair += P.rating * 2
 
 /obj/machinery/mech_recharger/machinery_process()

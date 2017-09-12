@@ -7,6 +7,7 @@
 // Items that ask to be called every cycle.
 var/global/datum/datacore/data_core = null
 var/global/list/all_areas                = list()
+var/global/list/processing_objects       = list()
 var/global/list/processing_power_items   = list()
 var/global/list/med_hud_users            = list() // List of all entities using a medical HUD.
 var/global/list/sec_hud_users            = list() // List of all entities using a security HUD.
@@ -24,9 +25,6 @@ var/global/list/global_map = null
 
 // Noises made when hit while typing.
 var/list/hit_appends = list("-OOF", "-ACK", "-UGH", "-HRNK", "-HURGH", "-GLORF")
-
-//Map levels for the crew suit sensors. Make sure you update this for different maps.
-var/list/map_levels = list(3,4,6)
 
 
 var/diary               = null

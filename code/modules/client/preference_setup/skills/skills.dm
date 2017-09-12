@@ -3,46 +3,26 @@
 	sort_order = 1
 
 /datum/category_item/player_setup_item/skills/load_character(var/savefile/S)
-	S["skills"]               >> pref.skills
-	S["used_skillpoints"]     >> pref.used_skillpoints
-	S["skill_specialization"] >> pref.skill_specialization
+	S["skills"]					>> pref.skills
+	S["used_skillpoints"]		>> pref.used_skillpoints
+	S["skill_specialization"]	>> pref.skill_specialization
 
 /datum/category_item/player_setup_item/skills/save_character(var/savefile/S)
-	S["skills"]               << pref.skills
-	S["used_skillpoints"]     << pref.used_skillpoints
-	S["skill_specialization"] << pref.skill_specialization
+	S["skills"]					<< pref.skills
+	S["used_skillpoints"]		<< pref.used_skillpoints
+	S["skill_specialization"]	<< pref.skill_specialization
 
 /datum/category_item/player_setup_item/skills/gather_load_query()
-	return list(
-		"ss13_characters" = list(
-			"vars" = list(
-				"skills",
-				"skill_specialization"
-			), 
-			"args" = list("id")
-		)
-	)
+	return list("ss13_characters" = list("vars" = list("skills", "skill_specialization"), "args" = list("id")))
 
 /datum/category_item/player_setup_item/skills/gather_load_parameters()
 	return list("id" = pref.current_character)
 
 /datum/category_item/player_setup_item/skills/gather_save_query()
-	return list(
-		"ss13_characters" = list(
-			"skills",
-			"skill_specialization",
-			"id" = 1,
-			"ckey" = 1
-		)
-	)
+	return list("ss13_characters" = list("skills", "skill_specialization", "id" = 1, "ckey" = 1))
 
 /datum/category_item/player_setup_item/skills/gather_save_parameters()
-	return list(
-		"skills" = list2params(pref.skills),
-		"skill_specialization" = pref.skill_specialization,
-		"id" = pref.current_character,
-		"ckey" = pref.client.ckey
-	)
+	return list("skills" = list2params(pref.skills), "skill_specialization" = pref.skill_specialization, "id" = pref.current_character, "ckey" = pref.client.ckey)
 
 /datum/category_item/player_setup_item/skills/sanitize_character(var/sql_load = 0)
 	if (SKILLS == null)
@@ -65,30 +45,27 @@
 		pref.used_skillpoints = 0
 
 /datum/category_item/player_setup_item/skills/content()
-	var/list/dat = list(
-		"<b>Select your Skills</b><br>",
-		"Current skill level: <b>[pref.GetSkillClass(pref.used_skillpoints)]</b> ([pref.used_skillpoints])<br>",
-		"<a href='?src=\ref[src];preconfigured=1'>Use preconfigured skillset</a><br>",
-		"<table>"
-	)
+	. += "<b>Select your Skills</b><br>"
+	. += "Current skill level: <b>[pref.GetSkillClass(pref.used_skillpoints)]</b> ([pref.used_skillpoints])<br>"
+	. += "<a href='?src=\ref[src];preconfigured=1'>Use preconfigured skillset</a><br>"
+	. += "<table>"
 	for(var/V in SKILLS)
-		dat += "<tr><th colspan = 5><b>[V]</b>"
-		dat += "</th></tr>"
+		. += "<tr><th colspan = 5><b>[V]</b>"
+		. += "</th></tr>"
 		for(var/datum/skill/S in SKILLS[V])
 			var/level = pref.skills[S.ID]
-			dat += "<tr style='text-align:left;'>"
-			dat += "<th><a href='?src=\ref[src];skillinfo=\ref[S]'>[S.name]</a></th>"
-			dat += "<th><a href='?src=\ref[src];setskill=\ref[S];newvalue=[SKILL_NONE]'><font color=[(level == SKILL_NONE) ? "red" : "black"]>\[Untrained\]</font></a></th>"
+			. += "<tr style='text-align:left;'>"
+			. += "<th><a href='?src=\ref[src];skillinfo=\ref[S]'>[S.name]</a></th>"
+			. += "<th><a href='?src=\ref[src];setskill=\ref[S];newvalue=[SKILL_NONE]'><font color=[(level == SKILL_NONE) ? "red" : "black"]>\[Untrained\]</font></a></th>"
 			// secondary skills don't have an amateur level
 			if(S.secondary)
-				dat += "<th></th>"
+				. += "<th></th>"
 			else
-				dat += "<th><a href='?src=\ref[src];setskill=\ref[S];newvalue=[SKILL_BASIC]'><font color=[(level == SKILL_BASIC) ? "red" : "black"]>\[Amateur\]</font></a></th>"
-			dat += "<th><a href='?src=\ref[src];setskill=\ref[S];newvalue=[SKILL_ADEPT]'><font color=[(level == SKILL_ADEPT) ? "red" : "black"]>\[Trained\]</font></a></th>"
-			dat += "<th><a href='?src=\ref[src];setskill=\ref[S];newvalue=[SKILL_EXPERT]'><font color=[(level == SKILL_EXPERT) ? "red" : "black"]>\[Professional\]</font></a></th>"
-			dat += "</tr>"
-	dat += "</table>"
-	. = dat.Join()
+				. += "<th><a href='?src=\ref[src];setskill=\ref[S];newvalue=[SKILL_BASIC]'><font color=[(level == SKILL_BASIC) ? "red" : "black"]>\[Amateur\]</font></a></th>"
+			. += "<th><a href='?src=\ref[src];setskill=\ref[S];newvalue=[SKILL_ADEPT]'><font color=[(level == SKILL_ADEPT) ? "red" : "black"]>\[Trained\]</font></a></th>"
+			. += "<th><a href='?src=\ref[src];setskill=\ref[S];newvalue=[SKILL_EXPERT]'><font color=[(level == SKILL_EXPERT) ? "red" : "black"]>\[Professional\]</font></a></th>"
+			. += "</tr>"
+	. += "</table>"
 
 /datum/category_item/player_setup_item/skills/OnTopic(href, href_list, user)
 	if(href_list["skillinfo"])

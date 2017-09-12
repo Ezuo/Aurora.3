@@ -61,30 +61,27 @@
 			infraction.felony = text2num(char_infraction_query.item[11])
 			pref.incidents.Add(infraction)
 
-/datum/category_item/player_setup_item/other/incidents/content(mob/user)
-	var/list/dat = list(
-		"<b>Incident Information</b><br>",
-		"The following incidents are on file for your character<br>"
-	)
+/datum/category_item/player_setup_item/other/incidents/content(var/mob/user)
+	pref.incidents = list()
+	. += "<b>Incident Information</b><br>"
+	. += "The following incidents are on file for your character<br>"
 	for (var/datum/char_infraction/I in pref.incidents)
-		dat += "<hr>"
-		dat += "UID: [I.UID]<br>"
-		dat += "Date/Time: [I.datetime]<br>"
-		dat += "Charges: "
+		. += "<hr>"
+		. += "UID: [I.UID]<br>"
+		. += "Date/Time: [I.datetime]<br>"
+		. += "Charges: "
 		for (var/L in I.charges)
-			dat += "[L], "
+			. += "[L], "
 		if (I.fine == 0)
-			dat += "<br>Brig Sentence: [I.getBrigSentence()] <br>"
+			. += "<br>Brig Sentence: [I.getBrigSentence()] <br>"
 		else
-			dat += "Fine: [I.fine] Credits<br>"
-		dat += "Notes: <br>"
+			. += "Fine: [I.fine] Credits<br>"
+		. += "Notes: <br>"
 		if (I.notes != "")
-			dat += nl2br(I.notes)
+			. += nl2br(I.notes)
 		else
-			dat += "- No Summary Entered -"
-		dat += "<br><a href='?src=\ref[src];details_sec_incident=[I.db_id]'>Show Details</a><br><a href='?src=\ref[src];del_sec_incident=[I.db_id]'>Delete Incident</a>"
-
-	. = dat.Join()
+			. += "- No Summary Entered -"
+		. += "<br><a href='?src=\ref[src];details_sec_incident=[I.db_id]'>Show Details</a><br><a href='?src=\ref[src];del_sec_incident=[I.db_id]'>Delete Incident</a>"
 
 /datum/category_item/player_setup_item/other/incidents/OnTopic(var/href,var/list/href_list, var/mob/user)
 	if(href_list["del_sec_incident"])

@@ -79,7 +79,7 @@
 
 /obj/item/clothing/head/cakehat/process()
 	if(!onfire)
-		STOP_PROCESSING(SSprocessing, src)
+		processing_objects.Remove(src)
 		return
 
 	var/turf/location = src.loc
@@ -98,7 +98,7 @@
 		src.damtype = "fire"
 		src.icon_state = "cake1"
 		src.item_state = "cake1"
-		START_PROCESSING(SSprocessing, src)
+		processing_objects.Add(src)
 	else
 		src.force = null
 		src.damtype = "brute"
@@ -148,21 +148,13 @@
 	siemens_coefficient = 1.5
 	item_icons = list()
 
-/obj/item/clothing/head/kitty/equipped(mob/living/carbon/human/user, slot)
-	. = ..()
-	if (slot == slot_head && istype(user))
-		var/hairgb = rgb(user.r_hair, user.g_hair, user.b_hair)
-		var/icon/blended = SSicon_cache.kitty_ear_cache[hairgb]
-		if (!blended)
-			blended = icon('icons/mob/head.dmi', "kitty")
-			blended.Blend(hairgb, ICON_ADD)
-			blended.Blend(icon('icons/mob/head.dmi', "kittyinner"), ICON_OVERLAY)
+	update_icon(var/mob/living/carbon/human/user)
+		if(!istype(user)) return
+		var/icon/ears = new/icon("icon" = 'icons/mob/head.dmi', "icon_state" = "kitty")
+		ears.Blend(rgb(user.r_hair, user.g_hair, user.b_hair), ICON_ADD)
 
-			SSicon_cache.kitty_ear_cache[hairgb] = blended
-
-		icon_override = blended
-	else if (icon_override)
-		icon_override = null
+		var/icon/earbit = new/icon("icon" = 'icons/mob/head.dmi', "icon_state" = "kittyinner")
+		ears.Blend(earbit, ICON_OVERLAY)
 
 /obj/item/clothing/head/richard
 	name = "chicken mask"

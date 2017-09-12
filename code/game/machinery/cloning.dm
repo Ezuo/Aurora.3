@@ -278,9 +278,8 @@
 /obj/machinery/clonepod/RefreshParts()
 	..()
 	var/rating = 0
-
 	for(var/obj/item/weapon/stock_parts/P in component_parts)
-		if(isscanner(P) || ismanipulator(P))
+		if(istype(P, /obj/item/weapon/stock_parts/scanning_module) || istype(P, /obj/item/weapon/stock_parts/manipulator))
 			rating += P.rating
 
 	heal_level = rating * 10 - 20

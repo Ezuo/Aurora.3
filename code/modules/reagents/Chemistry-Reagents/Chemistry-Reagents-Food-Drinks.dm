@@ -354,9 +354,6 @@
 
 /datum/reagent/nutriment/flour/touch_turf(var/turf/simulated/T)
 	if(!istype(T, /turf/space))
-		if(locate(/obj/effect/decal/cleanable/flour) in T)
-			return
-
 		new /obj/effect/decal/cleanable/flour(T)
 
 /datum/reagent/nutriment/coco

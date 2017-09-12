@@ -73,7 +73,7 @@
 			w_class = 3
 			recoil = 2
 			accuracy = -2
-			item_state = "obrez"
+			item_state = "gun"
 			slot_flags &= ~SLOT_BACK
 			slot_flags |= (SLOT_BELT|SLOT_HOLSTER)
 			name = "\improper obrez"
@@ -86,7 +86,7 @@
 	name = "obrez"
 	desc = "A shortened bolt action rifle, not really accurate. Uses 7.62mm rounds."
 	icon_state = "obrez"
-	item_state = "obrez"
+	item_state = "gun"
 	w_class = 3
 	recoil = 2
 	accuracy = -2

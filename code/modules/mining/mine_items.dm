@@ -31,7 +31,6 @@
 /obj/item/device/flashlight/lantern
 	name = "lantern"
 	icon_state = "lantern"
-	item_state = "lantern"
 	desc = "A mining lantern."
 	light_power = 1
 	brightness_on = 6
@@ -1086,6 +1085,7 @@ var/list/total_extraction_beacons = list()
 
 /obj/item/weapon/oremagnet/attack_self(mob/user)
 	if (use_check(user))
+		to_chat(user, "<span class='warning'>You cannot do that right now.</span>")
 		return
 
 	toggle_on(user)
@@ -1131,7 +1131,8 @@ var/list/total_extraction_beacons = list()
 		single_spark(O.loc)
 		do_teleport(O, user, 0)
 
-		CHECK_TICK
+		if (TICK_CHECK)
+			return
 
 /******************************Sculpting*******************************/
 /obj/item/weapon/autochisel

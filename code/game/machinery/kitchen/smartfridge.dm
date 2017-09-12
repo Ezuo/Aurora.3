@@ -22,7 +22,6 @@
 	var/scan_id = 1
 	var/is_secure = 0
 	var/datum/wires/smartfridge/wires = null
-	atmos_canpass = CANPASS_NEVER
 
 /obj/machinery/smartfridge/secure
 	is_secure = 1

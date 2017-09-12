@@ -12,7 +12,6 @@
 	projectile_type = /obj/item/projectile/beam/midlaser
 
 /obj/item/weapon/gun/energy/laser/mounted
-	name = "mounted laser carbine"
 	self_recharge = 1
 	use_external_power = 1
 
