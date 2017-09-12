@@ -99,6 +99,9 @@
 		if(speaking.name == L.name)
 			return 1
 
+	if((speaking.name == LANGUAGE_TCB) && speaking.check_special_condition(src))
+		return 1
+
 	return 0
 
 /*

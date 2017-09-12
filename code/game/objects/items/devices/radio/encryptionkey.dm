@@ -10,6 +10,7 @@
 	var/translate_binary = 0
 	var/translate_hive = 0
 	var/translate_hivenet = 0
+	var/translate_basic = 0
 	var/syndie = 0
 	var/list/channels = list()
 
@@ -139,3 +140,10 @@
 /obj/item/device/encryptionkey/entertainment
 	name = "entertainment radio key"
 	channels = list("Entertainment" = 1)
+
+/obj/item/device/encryptionkey/translator
+	name = "basic translator chip"
+	desc = "It appears to be a Tau Ceti Basic translator chip."
+	translate_basic = 1
+	icon = 'icons/obj/stock_parts.dmi'
+	icon_state = "neuralchip"

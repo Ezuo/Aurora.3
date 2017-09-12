@@ -12,6 +12,7 @@
 	var/translate_binary = 0
 	var/translate_hive = 0
 	var/translate_hivenet = 0
+	var/translate_basic = 0
 	var/obj/item/device/encryptionkey/keyslot1 = null
 	var/obj/item/device/encryptionkey/keyslot2 = null
 
@@ -57,6 +58,9 @@
 		if (translate_hivenet)
 			var/datum/language/bug = all_languages[LANGUAGE_VAURCA]
 			bug.broadcast(M, message)
+		if (translate_basic)
+			var/datum/language/common = all_languages[LANGUAGE_TCB]
+			common.broadcast(M, message)
 		return null
 
 	return ..()
@@ -233,6 +237,12 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/entertainment
 
+/obj/item/device/radio/headset/translator
+	name = "translator headset"
+	desc = "A modified radio headset for Forzun employees, allowing them to hear and understand Basic."
+	translate_basic = 1
+	ks1type = /obj/item/device/encryptionkey/translator
+
 /obj/item/device/radio/headset/attackby(obj/item/weapon/W as obj, mob/user as mob)
 //	..()
 	user.set_machine(src)
@@ -294,6 +304,7 @@
 	src.translate_binary = 0
 	src.translate_hive = 0
 	src.translate_hivenet = 0
+	src.translate_basic = 0
 	src.syndie = 0
 
 	if(keyslot1)
@@ -311,6 +322,9 @@
 
 		if(keyslot1.translate_hivenet)
 			src.translate_hivenet = 1
+		
+		if(keyslot1.translate_basic)
+			src.translate_basic = 1
 
 		if(keyslot1.syndie)
 			src.syndie = 1
@@ -330,6 +344,9 @@
 
 		if(keyslot2.translate_hivenet)
 			src.translate_hivenet = 1
+
+		if(keyslot2.translate_basic)
+			src.translate_basic = 1
 
 		if(keyslot2.syndie)
 			src.syndie = 1

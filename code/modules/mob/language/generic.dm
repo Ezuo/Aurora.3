@@ -37,6 +37,25 @@
 			return ask_verb
 	return speech_verb
 
+/datum/language/common/check_special_condition(var/mob/other)
+
+	var/mob/living/carbon/human/M = other
+	if(!istype(M))
+		return 0
+
+	if (M.l_ear || M.r_ear)
+		var/obj/item/device/radio/headset/dongle
+		if(istype(M.l_ear,/obj/item/device/radio/headset/translator))
+			dongle = M.l_ear
+		else
+			dongle = M.r_ear
+
+		if(!istype(dongle))
+			return 0
+		if(dongle.translate_basic)
+			return 1
+	return 0
+
 // Galactic common languages (systemwide accepted standards).
 /datum/language/trader
 	name = LANGUAGE_TRADEBAND
