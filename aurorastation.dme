@@ -1143,6 +1143,7 @@
 #include "code\modules\clothing\chameleon.dm"
 #include "code\modules\clothing\clothing.dm"
 #include "code\modules\clothing\clothing_accessories.dm"
+#include "code\modules\clothing\forzun.dm"
 #include "code\modules\clothing\ears\bandanna.dm"
 #include "code\modules\clothing\ears\skrell.dm"
 #include "code\modules\clothing\glasses\glasses.dm"
