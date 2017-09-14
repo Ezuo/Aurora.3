@@ -62,7 +62,8 @@
 
 	if(FAT in src.mutations)
 		tally += 1.5
-	if (bodytemperature < 283.222)
+	if ((bodytemperature < 283.222) && !(species.flags & VOID_BREATHE)) // Things that breathe in the coldness of space shouldn't be slowed by the temp
+		world << species.name
 		tally += (283.222 - bodytemperature) / 10 * 1.75
 
 	tally += max(2 * stance_damage, 0) //damaged/missing feet or legs is slow

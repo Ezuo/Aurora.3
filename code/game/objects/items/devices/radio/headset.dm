@@ -235,8 +235,8 @@
 	ks2type = /obj/item/device/encryptionkey/entertainment
 
 /obj/item/device/radio/headset/translator
-	name = "translator headset"
-	desc = "A modified radio headset for Forzun employees, allowing them to hear and understand Basic."
+	name = "translator implant"
+	desc = "A special implant for Forzun employees, allowing them to hear and understand Basic."
 	icon_state = "translator"
 	translate_basic = 1
 	canremove = 0
@@ -321,7 +321,7 @@
 
 		if(keyslot1.translate_hivenet)
 			src.translate_hivenet = 1
-		
+
 		if(keyslot1.translate_basic)
 			src.translate_basic = 1
 

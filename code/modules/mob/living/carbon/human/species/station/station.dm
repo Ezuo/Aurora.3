@@ -718,8 +718,8 @@ datum/species/machine/handle_post_spawn(var/mob/living/carbon/human/H)
 
 	eyes = "eyes_s"                                  // Icon for eyes.                        
 	blood_color = "#C70AF5"                          // Purple
-	flesh_color = "#FFC896"                          // Pink.
-	base_color                                       // Used by changelings. Should also be used for icon previes..
+	flesh_color = "#000000"                          // White...?
+	base_color = "#C70AF5"                           // Used by changelings. Should also be used for icon previes..
 	icon/icon_template                               // Used for mob icon generation for non-32x32 species.
 	bald = 1
 
@@ -758,10 +758,9 @@ datum/species/machine/handle_post_spawn(var/mob/living/carbon/human/H)
 
 	// Environment tolerance/life processes vars.
 	reagent_tag                                   //Used for metabolizing reagents.
-	breath_pressure = -1                          // Minimum partial pressure safe for breathing, kPa
-	breath_type = null
-	poison_type = "nitrogen"                       // Poisonous air.
-	exhale_type = null
+	breath_pressure = 1                          // Minimum partial pressure safe for breathing, kPa
+	breath_type = ""
+	exhale_type = ""
 	cold_level_1 = -1                            // Cold damage level 1 below this point.
 	cold_level_2 = -1                            // Cold damage level 2 below this point.
 	cold_level_3 = -1                            // Cold damage level 3 below this point.
@@ -773,7 +772,7 @@ datum/species/machine/handle_post_spawn(var/mob/living/carbon/human/H)
 	warning_high_pressure = 15 // High pressure warning.
 	warning_low_pressure = -1   // Low pressure warning.
 	hazard_low_pressure = -1     // Dangerously low pressure.
-	body_temperature = 100	                  // Non-IS_SYNTHETIC species will try to stabilize at this temperature.
+	body_temperature = 42	                  // Non-IS_SYNTHETIC species will try to stabilize at this temperature.
 	                                                  // (also affects temperature processing)
 
 	heat_discomfort_level = 200                   // Aesthetic messages about feeling warm.
@@ -795,12 +794,10 @@ datum/species/machine/handle_post_spawn(var/mob/living/carbon/human/H)
 
 	// Body/form vars.
 	list/inherent_verbs 	  // Species-specific verbs.
-	has_fine_manipulation = 1 // Can use small items.
-	siemens_coefficient = 1   // The lower, the thicker the skin and better the insulation.
 	darksight = 2             // Native darksight distance.
 	flags = VOID_BREATHE //Snowflake flag that circumvents processing a needed gas (e.g. oxy for humans)
-	appearance_flags = 0      // Appearance/display related features.
-	spawn_flags = CAN_JOIN | IS_WHITELISTED           // Flags that specify who can spawn as this species
+	appearance_flags = HAS_SKIN_COLOR      // Appearance/display related features.
+	spawn_flags = CAN_JOIN | IS_WHITELISTED
 	slowdown = 0              // Passive movement speed malus (or boost, if negative)
 	holder_type
 	rarity_value = 4          // Relative rarity/collector value for this species.
@@ -813,24 +810,21 @@ datum/species/machine/handle_post_spawn(var/mob/living/carbon/human/H)
 	sprint_cost_factor = 0.9  	// Multiplier on stamina cost for sprinting
 	exhaust_threshold = 50	  	// When stamina runs out, the mob takes oxyloss up til this value. Then collapses and drops to walk
 
-	gluttonous                // Can eat some mobs. Boolean.
-	mouth_size                // How big the mob's mouth is. Limits how large a mob this species can swallow. Only relevant if gluttonous is TRUE.
 	max_nutrition_factor = 1	//Multiplier on maximum nutrition
-	nutrition_loss_factor = 1	//Multiplier on passive nutrition losses
+	nutrition_loss_factor = 0.7	//Multiplier on passive nutrition losses
 
-	                              // Determines the organs that the species spawns with and
-	list/has_organ = list(    // which required-organ checks are conducted.
+	                          // Determines the organs that the species spawns with and
+	has_organ = list(    // which required-organ checks are conducted.
 		"heart" =    /obj/item/organ/heart,
-		"lungs" =    /obj/item/organ/lungs,
+		"gills" =    /obj/item/organ/fish/gills,
 		"liver" =    /obj/item/organ/liver,
 		"kidneys" =  /obj/item/organ/kidneys,
 		"brain" =    /obj/item/organ/brain,
-		"appendix" = /obj/item/organ/appendix,
 		"eyes" =     /obj/item/organ/eyes
 		)
 	vision_organ              // If set, this organ is required for vision. Defaults to "eyes" if the species has them.
 
-	list/has_limbs = list(
+	has_limbs = list(
 		"chest" =  list("path" = /obj/item/organ/external/chest),
 		"groin" =  list("path" = /obj/item/organ/external/groin),
 		"head" =   list("path" = /obj/item/organ/external/head),
@@ -843,3 +837,19 @@ datum/species/machine/handle_post_spawn(var/mob/living/carbon/human/H)
 		"l_foot" = list("path" = /obj/item/organ/external/foot),
 		"r_foot" = list("path" = /obj/item/organ/external/foot/right)
 		)
+/datum/species/fish/equip_survival_gear(var/mob/living/carbon/human/H)
+	..()
+	H.h_style = "Bald"
+	if(H) H.update_hair()
+	var/obj/item/device/radio/headset/translator/S = new /obj/item/device/radio/headset/translator(H)
+	if(H.equip_to_slot_or_del(S,slot_r_ear))
+		S.autodrobe_no_remove = 1
+
+	var/obj/item/clothing/mask/breath/forzun/M = new /obj/item/clothing/mask/breath/forzun(H)
+	if(H.equip_to_slot_or_del(M, slot_wear_mask))
+		M.autodrobe_no_remove = 1
+
+	var/obj/item/clothing/under/forzun/U = new /obj/item/clothing/under/forzun(H)
+	qdel(slot_w_uniform)
+	if(H.equip_to_slot_or_del(U, slot_w_uniform))
+		M.autodrobe_no_remove = 1

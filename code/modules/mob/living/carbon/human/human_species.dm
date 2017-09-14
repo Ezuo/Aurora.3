@@ -31,10 +31,6 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 /mob/living/carbon/human/forzun/Initialize(mapload)
 	h_style = "Bald"
 	. = ..(mapload, "Forzun")
-	//src.equip_to_slot_or_del(new /obj/item/clothing/under/, slot_w_uniform)
-	//src.equip_to_slot_or_del(new /obj/item/clothing/under/, slot_mask)
-	//src.equip_to_slot_or_del(new /obj/item/clothing/under/, slot_w_head)
-	//src.equip_to_slot_or_del(new /obj/item/device/radio/headset/syndicate(src), slot_l_ear)
 
 /mob/living/carbon/human/vox/Initialize(mapload)
 	h_style = "Short Vox Quills"
