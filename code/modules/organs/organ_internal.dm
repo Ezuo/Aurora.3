@@ -494,3 +494,41 @@ obj/item/organ/vaurca/neuralsocket/process()
 				return
 			var/datum/gas_mixture/leaked_gas = air_contents.remove_ratio(0.25)
 			T.assume_air(leaked_gas)
+
+
+obj/item/organ/fish/gills
+	name = "gills"
+	organ_tag = "gills"
+	parent_organ = "head"
+	icon = 'icons/mob/alien.dmi'
+	icon_state = "breathing_app"
+	var/datum/gas_mixture/air_contents = null
+	var/distribute_pressure = 16
+	var/volume = 50
+	var/manipulated_by = null
+
+/obj/item/organ/fish/gills/Initialize()
+	. = ..()
+
+	air_contents = new /datum/gas_mixture()
+	air_contents.adjust_gas("", 0)
+	air_contents.volume = volume //liters
+	air_contents.temperature = T20C
+	distribute_pressure = ((pick(1.8,2.0,2.4,2.8)*ONE_ATMOSPHERE)*O2STANDARD)
+
+	START_PROCESSING(SSprocessing, src)
+	var/mob/living/carbon/location = loc
+
+	location.internal = src
+	usr << "<span class='notice'>You open \the [src] valve.</span>"
+	if (location.internals)
+		location.internals.icon_state = "internal1"
+
+	return
+
+/obj/item/organ/fish/gills/Destroy()
+	if(air_contents)
+		qdel(air_contents)
+
+	STOP_PROCESSING(SSprocessing, src)
+	return ..()

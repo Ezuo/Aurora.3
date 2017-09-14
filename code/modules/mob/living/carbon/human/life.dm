@@ -396,7 +396,7 @@
 			rupture_lung()
 
 	//check if we actually need to process breath
-	if((!breath || breath.total_moles == 0) && breathe_check)
+	if((!breath || breath.total_moles == 0) && !breathe_check)
 		failed_last_breath = 1
 		if(health > config.health_threshold_crit)
 			adjustOxyLoss(HUMAN_MAX_OXYLOSS)
@@ -445,7 +445,7 @@
 	var/failed_inhale = 0
 	var/failed_exhale = 0
 
-	if(species.breath_type)
+	if(!isnull(species.breath_type))
 		breath_type = species.breath_type
 	else
 		breath_type = "oxygen"
@@ -469,7 +469,7 @@
 	var/exhaled_pp = (exhaling/breath.total_moles)*breath_pressure
 
 	// Not enough to breathe
-	if((inhale_pp < safe_pressure_min) && breathe_check)
+	if((inhale_pp < safe_pressure_min) || (breathe_check && inhale_pp > 0))
 		if(prob(20))
 			spawn(0) emote("gasp")
 
@@ -487,7 +487,7 @@
 
 	breath.adjust_gas(breath_type, -inhaled_gas_used, update = 0) //update afterwards
 
-	if(exhale_type && breathe_check)
+	if(exhale_type && !breathe_check)
 		breath.adjust_gas_temp(exhale_type, inhaled_gas_used, bodytemperature, update = 0) //update afterwards
 
 		// Too much exhaled gas in the air

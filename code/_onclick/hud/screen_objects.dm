@@ -271,13 +271,24 @@
 								breathes = H.species.breath_type
 								nicename = list ("suit", "back", "belt", "right hand", "left hand", "left pocket", "right pocket")
 								tankcheck = list (H.s_store, C.back, H.belt, C.r_hand, C.l_hand, H.l_store, H.r_store)
+
 								if(H.species.has_organ["phoron reserve tank"])
 									var/obj/item/organ/vaurca/preserve/preserve = H.internal_organs_by_name["phoron reserve tank"]
 									if(preserve && preserve.air_contents)
 										from = "in"
 										nicename |= "sternum"
 										tankcheck |= preserve
-
+										
+								if(H.species.has_organ["gills"])
+									world << "Has gills"
+									var/obj/item/organ/fish/gills/gills = H.internal_organs_by_name["gills"]
+									from = "within"
+									nicename |= "throat"
+									world << gills
+									tankcheck |= gills
+									world << "1"+gills
+									world << "2"+tankcheck
+									
 							else
 								nicename = list("right hand", "left hand", "back")
 								tankcheck = list(C.r_hand, C.l_hand, C.back)
@@ -291,6 +302,7 @@
 									tankcheck |= rig.air_supply
 
 							for(var/i=1, i<tankcheck.len+1, ++i)
+								world << "for " + i
 								if(istype(tankcheck[i], /obj/item/weapon/tank))
 									var/obj/item/weapon/tank/t = tankcheck[i]
 									if (!isnull(t.manipulated_by) && t.manipulated_by != C.real_name && findtext(t.desc,breathes))
@@ -323,6 +335,43 @@
 												contents.Add(t.air_contents.gas["phoron"])
 											else
 												contents.Add(0)
+								world << "Before gill tank check"
+								world << "3"+tankcheck[i]
+								if(istype(tankcheck[i], /obj/item/organ/fish/gills))
+									var/obj/item/organ/fish/gills/t = tankcheck[i]
+									if (!isnull(t.manipulated_by) && t.manipulated_by != C.real_name && findtext(t.desc,breathes))
+										contents.Add(t.air_contents.total_moles)	//Someone messed with the tank and put unknown gasses
+										continue
+									world << "before switch"					//in it, so we're going to believe the tank is what it says it is
+									switch(breathes)
+																		//These tanks we're sure of their contents
+										if("nitrogen") 							//So we're a bit more picky about them.
+											if(t.air_contents.gas["nitrogen"] && !t.air_contents.gas["oxygen"])
+												contents.Add(t.air_contents.gas["nitrogen"])
+											else
+												contents.Add(0)
+
+										if ("oxygen")
+											if(t.air_contents.gas["oxygen"] && !t.air_contents.gas["phoron"])
+												contents.Add(t.air_contents.gas["oxygen"])
+											else
+												contents.Add(0)
+
+										// No races breath this, but never know about downstream servers.
+										if ("carbon dioxide")
+											if(t.air_contents.gas["carbon_dioxide"] && !t.air_contents.gas["phoron"])
+												contents.Add(t.air_contents.gas["carbon_dioxide"])
+											else
+												contents.Add(0)
+
+										if ("phoron")
+											if(t.air_contents.gas["phoron"] && !t.air_contents.gas["nitrogen"])
+												contents.Add(t.air_contents.gas["phoron"])
+											else
+												contents.Add(0)
+										if ("")
+											world << "null if passed"
+											contents.Add(t.air_contents.gas[""])
 
 								if(istype(tankcheck[i], /obj/item/organ/vaurca/preserve))
 									var/obj/item/organ/vaurca/preserve/t = tankcheck[i]
@@ -332,7 +381,6 @@
 									switch(breathes)
 																		//These tanks we're sure of their contents
 										if("nitrogen") 							//So we're a bit more picky about them.
-
 											if(t.air_contents.gas["nitrogen"] && !t.air_contents.gas["oxygen"])
 												contents.Add(t.air_contents.gas["nitrogen"])
 											else
@@ -357,8 +405,10 @@
 											else
 												contents.Add(0)
 
-								if(!(istype(tankcheck[i], /obj/item/organ/vaurca/preserve)) & !(istype(tankcheck[i], /obj/item/weapon/tank)))
+
+								if(!(istype(tankcheck[i], /obj/item/organ/vaurca/preserve)) & !(istype(tankcheck[i], /obj/item/weapon/tank))) //& !(istype(tankcheck[i], /obj/item/organ/fish/gills)
 									//no tank so we set contents to 0
+									world << "No tank for some reason"
 									contents.Add(0)
 
 							//Alright now we know the contents of the tanks so we have to pick the best one.
