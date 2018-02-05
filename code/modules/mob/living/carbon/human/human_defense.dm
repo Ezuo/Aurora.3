@@ -119,7 +119,7 @@ emp_act
 /mob/living/carbon/human/proc/getarmor_organ(var/obj/item/organ/external/def_zone, var/type)
 	if(!type || !def_zone) return 0
 	var/protection = 0
-	var/list/protective_gear = list(head, wear_mask, wear_suit, w_uniform, gloves, shoes)
+	var/list/protective_gear = list(head, wear_mask, wear_suit, w_uniform, gloves, shoes, belt)
 	for(var/gear in protective_gear)
 		if(gear && istype(gear ,/obj/item/clothing))
 			var/obj/item/clothing/C = gear
