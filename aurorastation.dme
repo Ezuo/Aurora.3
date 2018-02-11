@@ -744,7 +744,6 @@
 #include "code\game\objects\items\devices\magnetic_lock.dm"
 #include "code\game\objects\items\devices\medicaltools.dm"
 #include "code\game\objects\items\devices\megaphone.dm"
-#include "code\game\objects\items\devices\militarytakeover.dm"
 #include "code\game\objects\items\devices\modkit.dm"
 #include "code\game\objects\items\devices\multitool.dm"
 #include "code\game\objects\items\devices\paicard.dm"
