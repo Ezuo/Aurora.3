@@ -25,10 +25,10 @@ var/datum/antagonist/military/military
 
 /datum/antagonist/military/update_antag_mob(var/datum/mind/player)
 	..()
-	var/syndicate_commando_rank
-	syndicate_commando_rank = pick("Lieutenant", "Captain", "Major")
-	var/syndicate_commando_name = pick(last_names)
-	player.name = "[syndicate_commando_rank] [syndicate_commando_name]"
+	var/military_commando_rank
+	military_commando_rank = pick("Lieutenant", "Captain", "Major")
+	var/military_commando_name = pick(last_names)
+	player.name = "[military_commando_rank] [military_commando_name]"
 	player.current.name = player.name
 	player.current.real_name = player.current.name
 	var/mob/living/carbon/human/H = player.current
@@ -36,6 +36,8 @@ var/datum/antagonist/military/military
 		H.gender = pick(MALE)
 		H.age = rand(25,45)
 		H.dna.ready_dna(H)
+		H.h_style = "CIA"
+		H.f_style = "3 O'clock Shadow"
 	return
 
 /datum/antagonist/military/equip(var/mob/living/carbon/human/player)
@@ -51,18 +53,3 @@ var/datum/antagonist/military/military
 		id.icon_state = "dogtags"
 		id.desc = "A set of dog tags listing name, age, and blood type."
 		id.name = "[player.name]'s dogtags"
-
-/datum/antagonist/military/update_antag_mob(var/datum/mind/player)
-	..()
-	var/syndicate_commando_rank
-	syndicate_commando_rank = pick("Lieutenant", "Captain", "Major")
-	var/syndicate_commando_name = pick(last_names)
-	player.name = "[syndicate_commando_rank] [syndicate_commando_name]"
-	player.current.name = player.name
-	player.current.real_name = player.current.name
-	var/mob/living/carbon/human/H = player.current
-	if(istype(H))
-		H.gender = pick(MALE)
-		H.age = rand(25,45)
-		H.dna.ready_dna(H)
-	return
