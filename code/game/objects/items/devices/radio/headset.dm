@@ -233,6 +233,13 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/entertainment
 
+/obj/item/device/radio/headset/responder
+	name = "responder's radio headset"
+	desc = "A radio used by those responding to the station during times of crisis."
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks2type = /obj/item/device/encryptionkey/responder
+
 /obj/item/device/radio/headset/attackby(obj/item/weapon/W as obj, mob/user as mob)
 //	..()
 	user.set_machine(src)

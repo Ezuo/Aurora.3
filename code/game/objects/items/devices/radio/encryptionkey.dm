@@ -139,3 +139,7 @@
 /obj/item/device/encryptionkey/entertainment
 	name = "entertainment radio key"
 	channels = list("Entertainment" = 1)
+
+/obj/item/device/encryptionkey/responder
+	name = "\improper responder radio encryption key"
+	channels = list("Response Team" = 1)

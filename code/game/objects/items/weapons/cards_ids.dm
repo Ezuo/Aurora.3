@@ -372,3 +372,11 @@ obj/item/weapon/card/id/centcom/ERT/New()
 /obj/item/weapon/card/id/all_access/New()
 	access = get_access_ids()
 	..()
+
+/obj/item/weapon/card/id/military
+	item_state = "id3"
+	icon_state = "dogtags"
+	desc = "A set of dog tags listing name, age, and blood type."
+
+/obj/item/weapon/card/id/military/prevent_tracking()
+	return electronic_warfare
