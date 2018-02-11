@@ -6,6 +6,8 @@
 	var/list/known_targets
 	var/list/supported_types
 	var/datum/topic_state/default/must_hack/hack_state
+	var/hack_time_base = 20 SECONDS
+	var/hack_time_offset = 10 SECONDS
 
 /obj/item/device/multitool/hacktool/New()
 	..()
@@ -57,7 +59,7 @@
 	user << "<span class='notice'>You begin hacking \the [target]...</span>"
 	is_hacking = 1
 	// On average hackin takes ~30 seconds. Fairly small random span to avoid people simply aborting and trying again
-	var/hack_result = do_after(user, (20 SECONDS + rand(0, 10 SECONDS) + rand(0, 10 SECONDS)))
+	var/hack_result = do_after(user, (hack_time_base + rand(0, hack_time_offset) + rand(0, hack_time_offset)))
 	is_hacking = 0
 
 	if(hack_result && in_hack_mode)
@@ -98,3 +100,29 @@
 	if(!hacktool || !hacktool.in_hack_mode || !(src_object in hacktool.known_targets))
 		return STATUS_CLOSE
 	return ..()
+
+
+/obj/item/device/multitool/hacktool/military
+	name = "military hack tool"
+	desc = "A device used by Biesel special forces with the capability to hack into any airlock system."
+	icon = 'icons/obj/hacktool.dmi'
+	icon_state = "hacktool-mil"
+	w_class = 1.0
+	in_hack_mode = 1
+	hack_time_base = 1 SECONDS
+	hack_time_offset = 1 SECONDS
+
+/obj/item/device/multitool/hacktool/military/attackby(var/obj/W, var/mob/user)
+		..()
+
+/*/obj/item/device/multitool/hacktool/military/attack_self(mob/user as mob)
+	if(..()) return
+
+	var/selection = input("Are you sure you want to hack the station systems and begin the assault?") in list("Yes","No")
+	switch(selection)
+		if ("Yes")
+			command_announcement.Announce("Attention: This %s &0t #*&^ $7-ystem now under military command.", "System Takeover", new_sound = 'sound/AI/militarytakeover.ogg')
+			qdel(src)
+		if ("No")
+			return
+	return*/
