@@ -22153,6 +22153,1234 @@
 /area/syndicate_mothership{
 	name = "\improper Ninja Base"
 	})
+"aWS" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aWT" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aWU" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aWV" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aWW" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aWX" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aWY" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aWZ" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXa" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXb" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXc" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXd" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXe" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXf" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXg" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXh" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXi" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXj" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXk" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXl" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXm" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXn" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXo" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXp" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXq" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXr" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXs" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXt" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXu" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXv" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXw" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXx" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXy" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXz" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXA" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXB" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXC" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXD" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXE" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXF" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXG" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aXH" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXI" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXJ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXK" = (
+/obj/effect/landmark{
+	name = "Military";
+	step_y = 0
+	},
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXL" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXM" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXN" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXO" = (
+/obj/effect/landmark{
+	name = "Military";
+	step_y = 0
+	},
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXP" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXQ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXR" = (
+/obj/effect/landmark{
+	name = "Military";
+	step_y = 0
+	},
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXS" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXT" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXU" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXV" = (
+/obj/effect/landmark{
+	name = "Military";
+	step_y = 0
+	},
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXW" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXX" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXY" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aXZ" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aYa" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aYb" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYc" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYd" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYe" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYf" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYg" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYh" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYi" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYj" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYk" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYl" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYm" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYn" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYo" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYp" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYq" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYr" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYs" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYt" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aYu" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aYv" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYw" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYx" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYy" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYz" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYA" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYB" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYC" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYD" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYE" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYF" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYG" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYH" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYI" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYJ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYK" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYL" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYM" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYN" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aYO" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aYP" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYQ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYR" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYS" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYT" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYU" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYV" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYW" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYX" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYY" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aYZ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZa" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZb" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZc" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZd" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZe" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZf" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZg" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZh" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aZi" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aZj" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZk" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZl" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZm" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZn" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZo" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZp" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZq" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZr" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZs" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZt" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZu" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZv" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZw" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZx" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZy" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZz" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZA" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZB" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aZC" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aZD" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZE" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZF" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZG" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZH" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZI" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZJ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZK" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZL" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZM" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZN" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZO" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZP" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZQ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZR" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZS" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZT" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZU" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZV" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aZW" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"aZX" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZY" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"aZZ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baa" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bab" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bac" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bad" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bae" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baf" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bag" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bah" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bai" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baj" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bak" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bal" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bam" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"ban" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bao" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bap" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"baq" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bar" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bas" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bat" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bau" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bav" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baw" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bax" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bay" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baz" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baA" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baB" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baC" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baD" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baE" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baF" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baG" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baH" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baI" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baJ" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"baK" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"baL" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baM" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baN" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baO" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baP" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baQ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baR" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baS" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baT" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baU" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baV" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baW" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baX" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baY" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"baZ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bba" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbb" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbc" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbd" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bbe" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bbf" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbg" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbh" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbi" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbj" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbk" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbl" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbm" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbn" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbo" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbp" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbq" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbr" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbs" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbt" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbu" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbv" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbw" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbx" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bby" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bbz" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbA" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbB" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbC" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbD" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbE" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbF" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbG" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbH" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbI" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbJ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbK" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbL" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbM" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbN" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbO" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbP" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbQ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbR" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bbS" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bbT" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbU" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbV" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbW" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbX" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbY" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bbZ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bca" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcb" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcc" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcd" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bce" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcf" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcg" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bch" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bci" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcj" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bck" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcl" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bcm" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bcn" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bco" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcp" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcq" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcr" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcs" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bct" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcu" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcv" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcw" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcx" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcy" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcz" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcA" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcB" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcC" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcD" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcE" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcF" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bcG" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bcH" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcI" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcJ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcK" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcL" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcM" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcN" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcO" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcP" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcQ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcR" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcS" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcT" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcU" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcV" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcW" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcX" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcY" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bcZ" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bda" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bdb" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdc" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdd" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bde" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdf" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdg" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdh" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdi" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdj" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdk" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdl" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdm" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdn" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdo" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdp" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdq" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdr" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bds" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdt" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bdu" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bdv" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdw" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdx" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdy" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdz" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdA" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdB" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdC" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdD" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdE" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdF" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdG" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdH" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdI" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdJ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdK" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdL" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdM" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdN" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bdO" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bdP" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdQ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdR" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdS" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdT" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdU" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdV" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdW" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdX" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdY" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bdZ" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bea" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"beb" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bec" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bed" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bee" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"bef" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"beg" = (
+/turf/unsimulated/floor/xmas,
+/area/template_noop)
+"beh" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bei" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bej" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bek" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bel" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bem" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"ben" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"beo" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bep" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"beq" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"ber" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bes" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bet" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"beu" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bev" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bew" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bex" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bey" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"bez" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"beA" = (
+/turf/unsimulated/wall,
+/area/template_noop)
+"beB" = (
+/turf/unsimulated/wall,
+/area/template_noop)
 
 (1,1,1) = {"
 aaa
@@ -51262,26 +52490,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aWS
+aXm
+aXG
+aYa
+aYu
+aYO
+aZi
+aZC
+aZW
+baq
+baK
+bbe
+bby
+bbS
+bcm
+bcG
+bda
+bdu
+bdO
+bei
 aaM
 aaM
 aaM
@@ -51519,26 +52747,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aWT
+aXn
+aXH
+aYb
+aYv
+aYP
+aZj
+aZD
+aZX
+bar
+baL
+bbf
+bbz
+bbT
+bcn
+bcH
+bdb
+bdv
+bdP
+bej
 aaM
 aaM
 aaM
@@ -51776,26 +53004,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aWU
+aXo
+aXI
+aYc
+aYw
+aYQ
+aZk
+aZE
+aZY
+bas
+baM
+bbg
+bbA
+bbU
+bco
+bcI
+bdc
+bdw
+bdQ
+bek
 aaM
 aaM
 aaM
@@ -52033,26 +53261,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aWV
+aXp
+aXJ
+aYd
+aYx
+aYR
+aZl
+aZF
+aZZ
+bat
+baN
+bbh
+bbB
+bbV
+bcp
+bcJ
+bdd
+bdx
+bdR
+bel
 aaM
 aaM
 aaM
@@ -52290,26 +53518,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aWW
+aXq
+aXK
+aYe
+aYy
+aYS
+aZm
+aZG
+baa
+bau
+baO
+bbi
+bbC
+bbW
+bcq
+bcK
+bde
+bdy
+bdS
+bem
 aaM
 aaM
 aaM
@@ -52547,26 +53775,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aWX
+aXr
+aXL
+aYf
+aYz
+aYT
+aZn
+aZH
+bab
+bav
+baP
+bbj
+bbD
+bbX
+bcr
+bcL
+bdf
+bdz
+bdT
+ben
 aaM
 aaM
 aaM
@@ -52804,26 +54032,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aWY
+aXs
+aXM
+aYg
+aYA
+aYU
+aZo
+aZI
+bac
+baw
+baQ
+bbk
+bbE
+bbY
+bcs
+bcM
+bdg
+bdA
+bdU
+beo
 aaM
 aaM
 aaM
@@ -53061,26 +54289,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aWZ
+aXt
+aXN
+aYh
+aYB
+aYV
+aZp
+aZJ
+bad
+bax
+baR
+bbl
+bbF
+bbZ
+bct
+bcN
+bdh
+bdB
+bdV
+bep
 aaM
 aaM
 aaM
@@ -53318,26 +54546,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aXa
+aXu
+aXO
+aYi
+aYC
+aYW
+aZq
+aZK
+bae
+bay
+baS
+bbm
+bbG
+bca
+bcu
+bcO
+bdi
+bdC
+bdW
+beq
 aaM
 aaM
 aaM
@@ -53575,26 +54803,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aXb
+aXv
+aXP
+aYj
+aYD
+aYX
+aZr
+aZL
+baf
+baz
+baT
+bbn
+bbH
+bcb
+bcv
+bcP
+bdj
+bdD
+bdX
+ber
 aaM
 aaM
 aaM
@@ -53832,26 +55060,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aXc
+aXw
+aXQ
+aYk
+aYE
+aYY
+aZs
+aZM
+bag
+baA
+baU
+bbo
+bbI
+bcc
+bcw
+bcQ
+bdk
+bdE
+bdY
+bes
 aaM
 aaM
 aaM
@@ -54089,26 +55317,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aXd
+aXx
+aXR
+aYl
+aYF
+aYZ
+aZt
+aZN
+bah
+baB
+baV
+bbp
+bbJ
+bcd
+bcx
+bcR
+bdl
+bdF
+bdZ
+bet
 aaM
 aaM
 aaM
@@ -54346,26 +55574,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aXe
+aXy
+aXS
+aYm
+aYG
+aZa
+aZu
+aZO
+bai
+baC
+baW
+bbq
+bbK
+bce
+bcy
+bcS
+bdm
+bdG
+bea
+beu
 aaM
 aaM
 aaM
@@ -54603,26 +55831,26 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aXf
+aXz
+aXT
+aYn
+aYH
+aZb
+aZv
+aZP
+baj
+baD
+baX
+bbr
+bbL
+bcf
+bcz
+bcT
+bdn
+bdH
+beb
+bev
 aaM
 aaM
 aaM
@@ -54860,26 +56088,26 @@ ajU
 ajT
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aXg
+aXA
+aXU
+aYo
+aYI
+aZc
+aZw
+aZQ
+bak
+baE
+baY
+bbs
+bbM
+bcg
+bcA
+bcU
+bdo
+bdI
+bec
+bew
 aaM
 aaM
 aaM
@@ -55117,26 +56345,26 @@ alw
 ajT
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aXh
+aXB
+aXV
+aYp
+aYJ
+aZd
+aZx
+aZR
+bal
+baF
+baZ
+bbt
+bbN
+bch
+bcB
+bcV
+bdp
+bdJ
+bed
+bex
 aaM
 aaM
 aaM
@@ -55374,26 +56602,26 @@ alt
 ajT
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aXi
+aXC
+aXW
+aYq
+aYK
+aZe
+aZy
+aZS
+bam
+baG
+bba
+bbu
+bbO
+bci
+bcC
+bcW
+bdq
+bdK
+bee
+bey
 aaM
 aaM
 aaM
@@ -55631,26 +56859,26 @@ alx
 ajT
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aXj
+aXD
+aXX
+aYr
+aYL
+aZf
+aZz
+aZT
+ban
+baH
+bbb
+bbv
+bbP
+bcj
+bcD
+bcX
+bdr
+bdL
+bef
+bez
 aaM
 aaM
 aaM
@@ -55888,26 +57116,26 @@ alv
 ajT
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aXk
+aXE
+aXY
+aYs
+aYM
+aZg
+aZA
+aZU
+bao
+baI
+bbc
+bbw
+bbQ
+bck
+bcE
+bcY
+bds
+bdM
+beg
+beA
 aaM
 aaM
 aaM
@@ -56145,26 +57373,26 @@ alw
 ajT
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+aXl
+aXF
+aXZ
+aYt
+aYN
+aZh
+aZB
+aZV
+bap
+baJ
+bbd
+bbx
+bbR
+bcl
+bcF
+bcZ
+bdt
+bdN
+beh
+beB
 aaM
 aaM
 aaM
