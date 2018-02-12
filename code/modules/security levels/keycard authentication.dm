@@ -72,6 +72,7 @@
 		dat += "<li><A href='?src=\ref[src];triggerevent=Revoke Emergency Maintenance Access'>Revoke Emergency Maintenance Access</A></li>"
 		dat += "<li><A href='?src=\ref[src];triggerevent=Cyborg Crisis Override'>Cyborg Crisis Override</A></li>"
 		dat += "<li><A href='?src=\ref[src];triggerevent=Disable Cyborg Crisis Override'>Disable Cyborg Crisis Override</A></li>"
+		dat += "<li><A href='?src=\ref[src];triggerevent=Activate Distress Beacon'>Activate Distress Beacon</A></li>"
 		dat += "</ul>"
 		user << browse(dat, "window=keycard_auth;size=500x250")
 	if(screen == 2)
@@ -110,6 +111,13 @@
 	event_confirmed_by = null
 
 /obj/machinery/keycard_auth/proc/broadcast_request()
+	if(event == "Activate Distress Beacon")
+		trigger_event(event)
+		log_game("[key_name(event_triggered_by)] triggered event [event]",ckey=key_name(event_triggered_by))
+		message_admins("[key_name_admin(event_triggered_by)] triggered event [event]", 1)
+		reset()
+		return
+
 	icon_state = "auth_on"
 	for(var/obj/machinery/keycard_auth/KA in SSmachinery.all_machines)
 		if(KA == src) continue
@@ -164,6 +172,13 @@
 
 			trigger_armed_response_team(1)
 			feedback_inc("alert_keycard_auth_ert",1)
+		if("Activate Distress Beacon")
+			if(is_ert_blocked())
+				usr << "<span class='warning'>The distress beacon appears to be malfunctioning.</span>"
+				return
+
+			trigger_distress_beacon(1)
+			feedback_inc("alert_keycard_auth_beacon",1)
 
 /obj/machinery/keycard_auth/proc/is_ert_blocked()
 	if(config.ert_admin_call_only) return 1
