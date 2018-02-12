@@ -52,6 +52,9 @@
 #define MODE_VAMPIRE "vampire"
 #define MODE_THRALL "thrall"
 #define MODE_MILITARY "military"
+#define MODE_IAC "iac"
+#define MODE_AI "ai"
+#define MODE_FFM "ffm"
 
 #define DEFAULT_TELECRYSTAL_AMOUNT 25
 

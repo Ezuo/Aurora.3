@@ -377,6 +377,7 @@ obj/item/weapon/card/id/centcom/ERT/New()
 	item_state = "id3"
 	icon_state = "dogtags"
 	desc = "A set of dog tags listing name, age, and blood type."
+	var/electronic_warfare = 1
 
 /obj/item/weapon/card/id/military/prevent_tracking()
 	return electronic_warfare
