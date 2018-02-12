@@ -8,9 +8,8 @@ var/datum/antagonist/military/military
 	welcome_text = "You are a Biesel military special forces operative. Move in, secure the civilians, and eliminate all hostiles with extreme prejudice."
 	landmark_id = "Military"
 	flags = ANTAG_OVERRIDE_JOB | ANTAG_CLEAR_EQUIPMENT | ANTAG_OVERRIDE_MOB | ANTAG_RANDOM_EXCEPTED
-	id+type = /obj/item/weapon/card/id/military
+	id_type = /obj/item/weapon/card/id/military
 	default_access = list(access_maint_tunnels, access_external_airlocks)
-	antaghud_indicator = "hudmilitary"
 
 	hard_cap = 5
 	hard_cap_round = 7
@@ -43,6 +42,8 @@ var/datum/antagonist/military/military
 	return
 
 /datum/antagonist/military/equip(var/mob/living/carbon/human/player)
+	if(!..())
+		return
 
 	player.equip_to_slot_or_del(new /obj/item/device/radio/headset/responder(player), slot_l_ear)
 	player.equip_to_slot_or_del(new /obj/item/clothing/under/rank/fatigues/marine (player), slot_w_uniform)
@@ -51,3 +52,4 @@ var/datum/antagonist/military/military
 	var/obj/item/weapon/card/id/id = create_id("Commando", player)
 	if(id)
 		id.name = "[player.name]'s dogtags"
+	return 1
