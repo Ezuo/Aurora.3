@@ -140,7 +140,6 @@ proc/trigger_distress_beacon(var/force = 0)
 
 	command_announcement.Announce("[station_name()]'s automated distress beacon has now been activated and is broadcasting on all frequencies. Please remain calm during this emergency and follow all orders from command staff.", "Automated Announcement")
 	responder_type = pick(1;military, 1;beacon_iac, 1;beacon_ai, 1;beacon_ffm, 1;ert)
-	world << responder_type
 	can_call_responders = 0 // Only one call per round, ladies.
 	send_response_team = 1
 
