@@ -13,7 +13,7 @@
 	initial_spawn_target = 7
 
 
-var/datum/antagonist/responder/iac/iac
+var/datum/antagonist/responder/iac/beacon_iac
 /datum/antagonist/responder/iac
 	id = MODE_IAC
 	role_text = "IAC Responder"
@@ -28,7 +28,7 @@ var/datum/antagonist/responder/iac/iac
 
 /datum/antagonist/responder/iac/New()
 	..()
-	iac = src
+	beacon_iac = src
 
 /datum/antagonist/responder/iac/equip(var/mob/living/carbon/human/player)
 	if(!..())
@@ -40,15 +40,16 @@ var/datum/antagonist/responder/iac/iac
 	player.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots(player), slot_shoes)
 
 	create_id("Interstellar Aid Corps", player)
+	player.regenerate_icons()
 	return 1
 
-var/datum/antagonist/responder/ai/ai
+var/datum/antagonist/responder/ai/beacon_ai
 /datum/antagonist/responder/ai
 	id = MODE_AI
 	role_text = "AI Responder"
 	role_text_plural = "AI Responders"
 	welcome_text = "You are a Artemis Initative soldier. Respond to the distress beacon and take charge of the situation for the glory of ATLAS."
-	landmark_id = "AI"
+	landmark_id = "Artemis"
 
 /datum/antagonist/responder/ai/create_default(var/mob/source)
 	var/mob/living/carbon/human/M = ..()
@@ -56,7 +57,7 @@ var/datum/antagonist/responder/ai/ai
 
 /datum/antagonist/responder/ai/New()
 	..()
-	ai = src
+	beacon_ai = src
 
 /datum/antagonist/responder/ai/equip(var/mob/living/carbon/human/player)
 	if(!..())
@@ -68,9 +69,10 @@ var/datum/antagonist/responder/ai/ai
 	player.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots(player), slot_shoes)
 
 	create_id("Artemis Initiative", player)
+	player.regenerate_icons()
 	return 1
 
-var/datum/antagonist/responder/ffm/ffm
+var/datum/antagonist/responder/ffm/beacon_ffm
 /datum/antagonist/responder/ffm
 	id = MODE_FFM
 	role_text = "FFM Responder"
@@ -84,7 +86,7 @@ var/datum/antagonist/responder/ffm/ffm
 
 /datum/antagonist/responder/ffm/New()
 	..()
-	ffm = src
+	beacon_ffm = src
 
 /datum/antagonist/responder/ffm/equip(var/mob/living/carbon/human/player)
 	if(!..())
@@ -96,4 +98,5 @@ var/datum/antagonist/responder/ffm/ffm
 	player.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots(player), slot_shoes)
 
 	create_id("Freedom Frontier Militia", player)
+	player.regenerate_icons()
 	return 1
