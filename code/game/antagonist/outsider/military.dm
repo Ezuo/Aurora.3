@@ -52,4 +52,6 @@ var/datum/antagonist/military/military
 	var/obj/item/weapon/card/id/id = create_id("Commando", player)
 	if(id)
 		id.name = "[player.name]'s dogtags"
+
+	player.regenerate_icons()
 	return 1
