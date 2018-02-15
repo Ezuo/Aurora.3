@@ -45,7 +45,7 @@ var/datum/antagonist/military/military
 	if(!..())
 		return
 
-	player.equip_to_slot_or_del(new /obj/item/device/radio/headset/responder(player), slot_l_ear)
+	player.equip_to_slot_or_del(new /obj/item/device/radio/headset/military(player), slot_l_ear)
 	player.equip_to_slot_or_del(new /obj/item/clothing/under/rank/fatigues/marine (player), slot_w_uniform)
 	player.equip_to_slot_or_del(new /obj/item/clothing/shoes/combat(player), slot_shoes)
 

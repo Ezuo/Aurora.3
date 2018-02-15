@@ -50,6 +50,9 @@ em						{font-style: normal;font-weight: bold;}
 .centradio				{color: #5C5C8A;}
 .airadio				{color: #FF00FF;}
 .entradio				{color: #339966;}
+.milradio				{color: #556B2F;}
+.respradio				{color: #3B3C36;}
+
 
 .secradio				{color: #A30000;}
 .engradio				{color: #A66300;}
