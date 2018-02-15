@@ -149,7 +149,7 @@
 
 /obj/item/weapon/gun/projectile/automatic/rifle/z8
 	name = "bullpup assault carbine"
-	desc = "The Z8 Bulldog bullpup carbine, made by the now defunct Zendai Foundries. Uses armor piercing 5.56mm rounds. Makes you feel like a space marine when you hold it."
+	desc = "The NAR-Z8 \"Bulldog\" bullpup carbine. Uses armor piercing 5.56mm rounds. Makes you feel like a space marine when you hold it."
 	icon_state = "carbine"
 	item_state = "z8carbine"
 	w_class = 4
@@ -218,6 +218,31 @@
 		user << "\The [launcher] has \a [launcher.chambered] loaded."
 	else
 		user << "\The [launcher] is empty."
+
+/obj/item/weapon/gun/projectile/automatic/rifle/z8/military
+	name = "military assault rifle"
+	desc = "The NAR-X3 \"Cerberus\" assault rifle, forged for use by special forces operatives. Uses both regular and armor piercing 5.56mm rounds. Its bite is much worse than its bark."
+	icon_state = "carbine"
+	item_state = "x3rifle"
+	origin_tech = list(TECH_COMBAT = 9, TECH_MATERIAL = 4)
+	magazine_type = /obj/item/ammo_magazine/a556/large
+	allowed_magazines = list(/obj/item/ammo_magazine/a556/large, /obj/item/ammo_magazine/a556/large/ap)
+
+/obj/item/weapon/gun/projectile/automatic/rifle/z8/military/update_icon()
+	..()
+	if(istype(ammo_magazine, /obj/item/ammo_magazine/a556/large/ap))
+		icon_state = "x3rifle_MAP"
+	else if(istype(ammo_magazine, /obj/item/ammo_magazine/a556/large))
+		icon_state = "x3rifle_M"
+	else
+		icon_state = "x3rifle"
+	if(wielded)
+		item_state = "x3rifle-wielded"
+	else
+		item_state = "x3rifle"
+	update_held_icon()
+	return
+
 
 /obj/item/weapon/gun/projectile/automatic/rifle/l6_saw
 	name = "light machine gun"
