@@ -11,6 +11,8 @@
 #define SYND_FREQ 1213
 #define RAID_FREQ 1277
 #define ENT_FREQ 1461 //entertainment frequency. This is not a diona exclusive frequency.
+#define MIL_FREQ 1337
+#define RESP_FREQ 1242
 
 // department channels
 var/const/PUB_FREQ = 1459
@@ -41,7 +43,9 @@ var/list/radiochannels = list(
 	"AI Private"	= AI_FREQ,
 	"Entertainment" = ENT_FREQ,
 	"Medical (I)"	= MED_I_FREQ,
-	"Security (I)"	= SEC_I_FREQ
+	"Security (I)"	= SEC_I_FREQ,
+	"Military" = MIL_FREQ,
+	"Responders" = RESP_FREQ
 )
 
 // The assoc variants are separate lists because they need the keys to be strings, but some code expects numbers.
@@ -49,7 +53,7 @@ var/list/radiochannels = list(
 // central command channels, i.e deathsquid & response teams
 var/list/CENT_FREQS = list(
 	ERT_FREQ, 
-	DTH_FREQ
+	DTH_FREQ,
 )
 
 var/list/CENT_FREQS_ASSOC = list(
@@ -60,7 +64,9 @@ var/list/CENT_FREQS_ASSOC = list(
 // Antag channels, i.e. Syndicate
 var/list/ANTAG_FREQS = list(
 	SYND_FREQ, 
-	RAID_FREQ
+	RAID_FREQ,
+	MIL_FREQ,
+	RESP_FREQ // Temporary till shit is mapped in
 )
 
 var/list/ANTAG_FREQS_ASSOC = list(
@@ -93,6 +99,10 @@ var/list/DEPT_FREQS_ASSOC = list(
 	"[ENT_FREQ]" = TRUE
 )
 
+var/list/ANTAG_FREQ_NAME_PRESERVE = list(
+	MIL_FREQ,
+	RESP_FREQ
+)
 #define TRANSMISSION_WIRE	0
 #define TRANSMISSION_RADIO	1
 

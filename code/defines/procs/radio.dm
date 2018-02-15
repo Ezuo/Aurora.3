@@ -17,7 +17,7 @@
 	var/freq_text
 
 	// the name of the channel
-	if(display_freq in ANTAG_FREQS)
+	if(display_freq in ANTAG_FREQS && !(display_freq in ANTAG_FREQ_NAME_PRESERVE))
 		freq_text = "#unkn"
 	else
 		for(var/channel in radiochannels)

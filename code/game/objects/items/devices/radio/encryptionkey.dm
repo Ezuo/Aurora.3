@@ -140,6 +140,12 @@
 	name = "entertainment radio key"
 	channels = list("Entertainment" = 1)
 
+/obj/item/device/encryptionkey/military
+	name = "\improper military radio encryption key"
+	channels = list("Military" = 1)
+	syndie = 1
+
 /obj/item/device/encryptionkey/responder
 	name = "\improper responder radio encryption key"
-	channels = list("Response Team" = 1)
+	channels = list("Responders" = 1)
+	syndie = 1 // Temporary until shit is mapped in
