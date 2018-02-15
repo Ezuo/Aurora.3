@@ -9169,14 +9169,18 @@
 /turf/unsimulated/wall/riveted,
 /area/centcom/control)
 "avy" = (
-/obj/machinery/telecomms/receiver/preset_cent,
+/obj/machinery/telecomms/receiver/preset_cent{
+	freq_listening = list(1242,1345,1341)
+	},
 /turf/unsimulated/floor{
 	icon_state = "green";
 	dir = 9
 	},
 /area/centcom/control)
 "avz" = (
-/obj/machinery/telecomms/bus/preset_cent,
+/obj/machinery/telecomms/bus/preset_cent{
+	freq_listening = list(1242,1345,1341,1461)
+	},
 /turf/unsimulated/floor{
 	icon_state = "green";
 	dir = 1
@@ -9190,7 +9194,9 @@
 	},
 /area/centcom/control)
 "avB" = (
-/obj/machinery/telecomms/server/presets/centcomm,
+/obj/machinery/telecomms/server/presets/centcomm{
+	freq_listening = list(1242,1345,1341)
+	},
 /turf/unsimulated/floor{
 	icon_state = "green";
 	dir = 1

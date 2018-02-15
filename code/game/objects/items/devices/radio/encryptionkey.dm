@@ -148,4 +148,3 @@
 /obj/item/device/encryptionkey/responder
 	name = "\improper responder radio encryption key"
 	channels = list("Responders" = 1)
-	syndie = 1 // Temporary until shit is mapped in

@@ -54,6 +54,7 @@ var/list/radiochannels = list(
 var/list/CENT_FREQS = list(
 	ERT_FREQ, 
 	DTH_FREQ,
+	RESP_FREQ
 )
 
 var/list/CENT_FREQS_ASSOC = list(
@@ -66,7 +67,6 @@ var/list/ANTAG_FREQS = list(
 	SYND_FREQ, 
 	RAID_FREQ,
 	MIL_FREQ,
-	RESP_FREQ // Temporary till shit is mapped in
 )
 
 var/list/ANTAG_FREQS_ASSOC = list(
