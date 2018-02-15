@@ -115,7 +115,8 @@
 /obj/item/device/multitool/hacktool/military/attackby(var/obj/W, var/mob/user)
 		..()
 
-/*/obj/item/device/multitool/hacktool/military/attack_self(mob/user as mob)
+// This is purely debug/test code and WILL BE REMOVED once mapping is complete
+/obj/item/device/multitool/hacktool/military/attack_self(mob/user as mob)
 	if(..()) return
 
 	var/selection = input("Are you sure you want to hack the station systems and begin the assault?") in list("Yes","No")
@@ -125,4 +126,4 @@
 			qdel(src)
 		if ("No")
 			return
-	return*/
+	return
