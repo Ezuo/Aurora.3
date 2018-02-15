@@ -199,6 +199,19 @@
 	origin_tech = list(TECH_COMBAT = 3)
 	ammo_type = /obj/item/ammo_casing/a556/ap
 
+/obj/item/ammo_magazine/a556/large
+	name = "large magazine (5.56mm)"
+	icon_state = "5.56L"
+	origin_tech = list(TECH_COMBAT = 2)
+	max_ammo = 30
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/a556/large/ap
+	name = "large magazine (5.56mm AP)"
+	icon_state = "5.56APL"
+	origin_tech = list(TECH_COMBAT = 3)
+	ammo_type = /obj/item/ammo_casing/a556/ap
+
 /obj/item/ammo_magazine/a50
 	name = "magazine (.50)"
 	icon_state = "50ae"
