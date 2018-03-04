@@ -30,6 +30,11 @@
 	desc = "Designed to both hide identities and keep your face comfy and warm."
 	icon_state = "swatclava"
 
+/obj/item/clothing/mask/balaclava/artemis
+	name = "tactical balaclava"
+	desc = "A tactical balaclava designed to hide the identity of the wearer."
+	icon_state = "ffm-balaclava"
+
 /obj/item/clothing/mask/luchador
 	name = "luchador mask"
 	desc = "Worn by robust fighters, flying high to defeat their foes!"

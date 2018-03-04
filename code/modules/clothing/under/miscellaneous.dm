@@ -643,3 +643,24 @@
 	desc = "An oldfashioned red swimsuit."
 	icon_state = "swim_red"
 	siemens_coefficient = 1
+
+/obj/item/clothing/under/responder/iac
+	name = "IAC uniform"
+	desc = "A bland uniform, marking the wearer as part of the Interstellar Aid Corps."
+	icon_state = "IAC-uniform"
+	item_state = "IAC-uniform"
+	siemens_coefficient = 1
+
+/obj/item/clothing/under/responder/artemis
+	name = "AI uniform"
+	desc = "A simple tactical uniform, colored orange and black in line with Artemis Initative colors."
+	icon_state = "AI-uniform"
+	item_state = "AI-uniform"
+	siemens_coefficient = 0.7
+
+/obj/item/clothing/under/responder/ffm
+	name = "FFM uniform"
+	desc = "A heavy and rugged uniform, usually worn by those in the Freedom Frontier Militia."
+	icon_state = "ffm-uniform"
+	item_state = "ffm-uniform"
+	siemens_coefficient = 0.7

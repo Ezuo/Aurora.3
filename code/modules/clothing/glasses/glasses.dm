@@ -199,6 +199,13 @@
 	darkness_view = -1
 	flash_protection = FLASH_PROTECTION_MODERATE
 
+/obj/item/clothing/glasses/sunglasses/tactical
+	desc = "Some sturdy, flash resistant goggles with an orange tint."
+	name = "combat goggles"
+	icon_state = "tac_goggles"
+	item_state = "tac_goggles"
+	item_flags = AIRTIGHT
+
 /obj/item/clothing/glasses/welding
 	name = "welding goggles"
 	desc = "Protects the eyes from welders, approved by the mad scientist association."

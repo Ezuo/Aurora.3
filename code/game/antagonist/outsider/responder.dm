@@ -35,8 +35,7 @@ var/datum/antagonist/responder/iac/beacon_iac
 		return
 
 	player.equip_to_slot_or_del(new /obj/item/device/radio/headset/responder(player), slot_l_ear)
-	//player.equip_to_slot_or_del(new /obj/item/clothing/under/iac (player), slot_w_uniform)
-	player.equip_to_slot_or_del(new /obj/item/clothing/under/color/black (player), slot_w_uniform)
+	player.equip_to_slot_or_del(new /obj/item/clothing/under/responder/iac (player), slot_w_uniform)
 	player.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots(player), slot_shoes)
 
 	create_id("Interstellar Aid Corps", player)
@@ -64,8 +63,7 @@ var/datum/antagonist/responder/ai/beacon_ai
 		return
 
 	player.equip_to_slot_or_del(new /obj/item/device/radio/headset/responder(player), slot_l_ear)
-	//player.equip_to_slot_or_del(new /obj/item/clothing/under/ai (player), slot_w_uniform)
-	player.equip_to_slot_or_del(new /obj/item/clothing/under/color/black (player), slot_w_uniform)
+	player.equip_to_slot_or_del(new /obj/item/clothing/under/responder/artemis (player), slot_w_uniform)
 	player.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots(player), slot_shoes)
 
 	create_id("Artemis Initiative", player)
@@ -93,8 +91,7 @@ var/datum/antagonist/responder/ffm/beacon_ffm
 		return
 
 	player.equip_to_slot_or_del(new /obj/item/device/radio/headset/responder(player), slot_l_ear)
-	//player.equip_to_slot_or_del(new /obj/item/clothing/under/ffm (player), slot_w_uniform)
-	player.equip_to_slot_or_del(new /obj/item/clothing/under/color/black (player), slot_w_uniform)
+	player.equip_to_slot_or_del(new /obj/item/clothing/under/responder/ffm (player), slot_w_uniform)
 	player.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots(player), slot_shoes)
 
 	create_id("Freedom Frontier Militia", player)

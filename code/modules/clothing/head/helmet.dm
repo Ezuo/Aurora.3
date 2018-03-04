@@ -186,3 +186,25 @@
 	name = "emergency response team medical helmet"
 	desc = "A set of armor worn by medical members of the NanoTrasen Emergency Response Team. Has red and white highlights."
 	icon_state = "erthelmet_med"
+
+//Responder helmets
+
+/obj/item/clothing/head/helmet/iac
+	name = "IAC helmet"
+	desc = "A standard helmet, colored blue. Protects the head from impacts."
+	icon_state = "IAC-helmet"
+	item_state = "IAC-helmet"
+
+/obj/item/clothing/head/helmet/riot/artemis
+	name = "AI helmet"
+	desc = "A tactical helmet with included visor, protecting the eyes from attacks. The visor can be flipped up."
+	icon_state = "AI-helmet"
+	item_state = "AI-helmet"
+	armor = list(melee = 62, bullet = 50, laser = 50,energy = 35, bomb = 10, bio = 0, rad = 0)
+
+/obj/item/clothing/head/helmet/riot/ffm
+	name = "FFM helmet"
+	desc = "A heavy helmet, with an armor plate attached to the front of it. The plate is on a hinge, and can be flipped up."
+	icon_state = "FFM-helmet"
+	item_state = "FFM-helmet"
+	armor = list(melee = 70, bullet = 65, laser = 65,energy = 40, bomb = 20, bio = 0, rad = 0)
