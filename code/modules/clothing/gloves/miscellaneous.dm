@@ -36,6 +36,12 @@
 	heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/gloves/combat/ffm
+	name = "rugged combat gloves"
+	desc = "These tactical gloves look like they could take a beating."
+	icon_state = "ffm-gloves"
+	item_state = "ffm-gloves"
+
 /obj/item/clothing/gloves/latex
 	name = "latex gloves"
 	desc = "Sterile latex gloves."

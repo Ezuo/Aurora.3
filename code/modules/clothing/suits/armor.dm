@@ -490,8 +490,33 @@
 	icon_state = "ert_peacekeeper"
 	item_state = "ert_peacekeeper"
 
-//warden armor
+//Responder armor
 
+/obj/item/clothing/suit/armor/vest/responder/iac
+	name = "IAC armor vest"
+	desc = "A light armored vest worn by those in the interstellar aid corps, colored a soft blue."
+	icon_state = "IAC-vest"
+	item_state = "IAC-vest"
+	armor = list(melee = 50, bullet = 15, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/armor/vest/responder/artemis
+	name = "AI tactical armor"
+	desc = "A tactical vest worn by those in the Artemis Initiative, decked out in black and gold."
+	icon_state = "AI-vest"
+	item_state = "AI-vest"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	pocket_slots = 4
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 40, bomb = 40, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/armor/vest/responder/ffm
+	name = "FFM armored suit"
+	desc = "A heavy armor vest used by those in the Freedom Frontier Militia, colored orange and brown."
+	icon_state = "ffm-armor"
+	item_state = "ffm-armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	pocket_slots = 4
+	armor = list(melee = 75, bullet = 70, laser = 70, energy = 40, bomb = 40, bio = 0, rad = 0)
+	slowdown = 1
 
 //All of the armor below is mostly unused
 
