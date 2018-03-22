@@ -104,7 +104,7 @@
 
 /obj/item/device/multitool/hacktool/military
 	name = "military hack tool"
-	desc = "A device used by Biesel special forces with the capability to hack into any airlock system."
+	desc = "A locked door is just a suggestion, and you don't take advice."
 	icon = 'icons/obj/hacktool.dmi'
 	icon_state = "hacktool-mil"
 	w_class = 1.0
